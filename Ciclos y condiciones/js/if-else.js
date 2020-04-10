@@ -30,3 +30,21 @@ if (dia === 0) {
 } else {
     console.log("No es lunes, martes o domingo");
 }
+
+
+
+// Laboratorio
+
+dia = 3;
+
+let diasSemana = {
+  0: 'Domingo',
+  1: 'Lunes',
+  2: 'Martes',
+  3: 'Miercoles',
+  4: 'Jueves',
+  5: 'Viernes',
+  6: 'Sabado'
+};
+
+console.log( diasSemana[dia]);
