@@ -11,9 +11,21 @@ class Persona {
         this.frase = frase;
     }
 
+    quienSoy() {
+        console.log(`Soy ${this.nombre} y mi identidad es ${this.codigo}`);
+    }
+
+    miFrase() {
+        this.quienSoy();
+        console.log(`${this.codigo} dice: ${this.frase}`);
+    }
+
 }
 
 const spiderman = new Persona('Peter Parker', 'Spiderman', 'Hello');
 const ironman = new Persona('Tony Stark', 'IronMan', 'Helouda');
 console.log(spiderman);
 console.log(ironman);
+
+spiderman.miFrase();
+ironman.miFrase();
